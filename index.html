@@ -11,15 +11,15 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="parent-div flex justify-between items-center max-w-[1250px] border-2 border-red-500 min-h-[200px] container mx-auto">
-        <div class="left-div border-2 border-green-500">
+    <div class="parent-div flex flex-col md:flex-row justify-between items-center max-w-[1250px] min-h-[200px] mx-auto">
+        <div class="left-div">
             <h1 class="text-[80px] font-bold">It's good<br> tea time at The<br> Tea House</h1>
             <p class="text-[18px] my-10">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
-            <button class="w-[200px] text-xl text-white rounded-lg h-[64px] bg-red-500">Explore Here</button>
+            <button class="w-[200px] text-xl text-white rounded-lg h-[64px] bg-red-500 bg-gradient-to-r from-[#ff8938] to-[#ff0000]"><span>Explore Here</span><i class="fa-solid fa-arrow-right ml-[10px] -rotate-45"></i></button>
         </div>
-        <div class="right-div border-2 border-blue-500">
-            <img src="images/banner.png" alt="">
-            <div class="w-[255px] h-[100px] flex items-center rounded-lg shadow-md">
+        <div class="right-div relative">
+            <img src="images/banner.png" class="relative top-[100px]" alt="">
+            <div class="w-[255px] h-[100px] flex items-center rounded-lg shadow-md absolute left-[100px] bg-white">
                 <span class="text-4xl"><i class="fa-solid fa-face-grin-stars"></i></span>
                 <div class="ml-4">
                     <p class="text-4xl font-bold">5.00</p>
@@ -28,5 +28,55 @@
             </div>
         </div>
     </div>
+
+
+    <!-- featured section starts here -->
+
+
+     <section class="max-w-[1250px] min-h-[200px] mx-auto mt-[100px]">
+        <h1 class="text-5xl text-center">Our Featured Products</h1>
+        <p class="text-center my-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <div class="featured-parent min-h-[200px] gap-4 grid grid-cols-1 md:grid-cols-4">
+         <div class="featured-card bg-gradient-to-b from-[#f4f4f4] to-[#f4f4f400] min-h-[300px] text-center p-4 rounded-lg">
+            <img src="images/tea-1.png" class="mx-auto block" alt="">
+            <h1 class="text-2xl font-bold">Milk Tea</h1>
+            <p>Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="featured-card bg-gradient-to-b from-[#f4f4f4] to-[#f4f4f400] min-h-[300px] text-center p-4 rounded-lg">
+            <img src="images/tea-2.png" class="mx-auto block" alt="">
+            <h1 class="text-2xl font-bold">Black Tea</h1>
+            <p>Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="featured-card bg-gradient-to-b from-[#f4f4f4] to-[#f4f4f400] min-h-[300px] text-center p-4 rounded-lg">
+            <img src="images/tea-3.png" class="mx-auto block" alt="">
+            <h1 class="text-2xl font-bold">Lemon Tea</h1>
+            <p>Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="featured-card bg-gradient-to-b from-[#f4f4f4] to-[#f4f4f400] min-h-[300px] text-center p-4 rounded-lg">
+            <img src="images/tea-4.png" class="mx-auto block" alt="">
+            <h1 class="text-2xl font-bold">Green Tea</h1>
+            <p>Creamer could be replaced by fresh milk</p>
+        </div>
+     </div>
+     </section>
+
+
+     <!-- great tea section starts here -->
+
+     <section class="max-w-[1250px] min-h-[200px] mx-auto mt-[100px]">
+        <div>
+            <div>
+
+            </div>
+            <div>
+                <h1 class="text-5xl font-bold">Great Tea, Freshly <br> Presented</h1>
+                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h1>Unique Taste</h1>
+                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h1>Premium Quality</h1>
+                <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            </div>
+        </div>
+     </section>
 </body>
 </html>
